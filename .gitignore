@@ -1,0 +1,8 @@
+.vscode
+*.bak
+*.zip
+.*.swp
+.idea
+.DS_Store
+~*
+.direnv
