@@ -8,10 +8,11 @@ def isPalindrome(s: str) -> bool:
   left = 0
   right = len(s) - 1
   while left < right:
-    print(left, right)
-    if not is_alphanumeric(s[left]):
+    foo = s[left]
+    bar = s[right]
+    if not is_alphanumeric(s[left].lower()):
       left += 1
-    elif not is_alphanumeric(s[right]):
+    elif not is_alphanumeric(s[right].lower()):
       right -= 1
     elif s[left].lower() == s[right].lower():
       left += 1
@@ -20,5 +21,3 @@ def isPalindrome(s: str) -> bool:
       return False
 
   return True
-
-print(isPalindrome("A man, a plan, a canal: Panama"))
